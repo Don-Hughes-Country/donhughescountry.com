@@ -212,6 +212,10 @@ $gallery-expanded-size: 600px;
 			font-family: $raleway;
 			color: #fff;
 			letter-spacing: 1px;
+
+			&:first-of-type {
+				margin-bottom: 0px !important;
+			}
 		}
 
 		a {

@@ -7511,12 +7511,16 @@ a.th {
     color: #fff;
     letter-spacing: 1px;
   }
-  /* line 217, ../sass/_styles.scss */
+  /* line 216, ../sass/_styles.scss */
+  #site-footer p:first-of-type {
+    margin-bottom: 0px !important;
+  }
+  /* line 221, ../sass/_styles.scss */
   #site-footer a {
     color: #fff;
     text-decoration: none;
   }
-  /* line 221, ../sass/_styles.scss */
+  /* line 225, ../sass/_styles.scss */
   #site-footer a:hover {
     color: #be914e;
   }
