@@ -1,0 +1,230 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:100|Nixie+One|Fredericka+the+Great|Cabin+Sketch|Syncopate|Istok+Web");
+
+// Colors
+$base: #8A3B17;
+$dark-brown: #2b251D;
+$beige: #877869;
+$gray: #bcbcbc;
+$yellowish: #BE914E;
+$transparent-gray: rgba(255, 255, 255, 0.1);
+$dark-gray: rgba(0, 0, 0, 0.85);
+$link-hover-color: rgba(170, 0, 0, 1);
+
+// Fonts
+$raleway: Raleway;
+$nixie-one: 'Nixie One';
+$syncopate: Syncopate, cursive;
+$istok-web: 'Istok Web';
+
+// Sizes
+$gallery-thumbnail-size: 100px;
+$gallery-expanded-size: 600px;
+
+// Margins
+@mixin margins($top: auto, $left: auto, $bottom: auto, $right: auto) {
+	margin-top: $top;
+	margin-left: $left;
+	margin-bottom: $bottom;
+	margin-right: $right;
+}
+
+// Padding
+@mixin padding($top: auto, $left: auto, $bottom: auto, $right: auto) {
+	padding-top: $top;
+	padding-left: $left;
+	padding-bottom: $bottom;
+	padding-right: $right;
+}
+
+// Border
+@mixin border($thickness: 1px, $type: solid, $color: #000) {
+	border: #{$thickness} #{$type} #{$color};
+}
+
+// Box Shadow
+@mixin box-shadow($x: auto, $y: auto, $spread: auto, $color: #000) {
+	-webkit-box-shadow: #{$x} #{$y} #{$spread} #{$color};
+	-moz-box-shadow: #{$x} #{$y} #{$spread} #{$color};
+	box-shadow: #{$x} #{$y} #{$spread} #{$color};
+}
+
+// Text Shadow
+
+/** Global Styles */
+
+/** Screen Only */
+@media only screen {
+	/** Body */
+	body {
+		background: url('http://donhughescountry.com/_images/sidepic2.png') fixed no-repeat;
+		background-position: right;
+		background-size: contain;
+		background-color: #{$dark-gray};
+	}
+
+	/** Gallery Activated */
+	.galleryActivated {
+		background: none;
+		background-color: black;
+
+		#container, footer, #music-player {
+			visibility: hidden;
+		}
+	}
+
+	/** Container */
+	#container {
+		@include margins();
+	}
+
+	/** Content Area */
+	#content-area {
+		@include margins(90px);
+		@include padding(auto, 20px, auto, 20px);
+		@include border(2px, solid, #fff);
+		@include box-shadow(5px, 5px, 15px, #000);
+		background: $beige;
+
+		/** Section */
+		section {
+			/** Article */
+			article {
+				@include margins(20px);
+				border-bottom: 2px dotted rgba(0, 0, 0, 0.8);
+
+				&:last-child {
+					@include margins(auto, auto, 20px, auto);
+					border-bottom: none;
+				}
+
+				/** Heading 1 */
+				h1 {
+					font-size: 2.5em;
+					font-weight: 200;
+					font-family: $raleway;
+					@include margins(20px, auto, 0px, auto);
+				}
+
+				/** Heading 2 */
+				h2 {
+					font-size: 1em;
+					font-family: $syncopate;
+					font-weight: normal;
+					@include margins(0px, 0px, auto, auto);
+					font-style: normal;
+					letter-spacing: 1px;
+				}
+
+				/** Paragraphs and List Items */
+				p, ol li, ul li {
+					font-size: 1em;
+					line-height: 1.5em;
+					font-family: $istok-web;
+					font-weight: normal;
+					letter-spacing: 1px;
+				}
+
+				ol li, ul li {
+					margin-left: 1.5em;
+				}
+
+				/** Blockquote */
+				blockquote {
+					font-size: 1.5em;
+					font-family: $nixie-one;
+					letter-spacing: 1px;
+					font-style: italic;
+					background: $transparent-gray;
+					padding: 10px;
+				}
+
+				/** Links */
+				a {
+					color: $base;
+					text-decoration: none;
+					font-weight: bold;
+
+					&:hover {
+						color: $link-hover-color;
+					}
+				}
+
+				/** Video */
+				video {
+					@include margins(20px, 70px, auto, auto);
+					background: #000;
+				}
+
+				/** Purchase CD Links */
+				table tbody tr td div {
+					margin-top: 20px !important;
+				}
+
+				/** Contact Info */
+				.contactInfo {
+					text-align: center;
+				}
+
+				/** Song Titles */
+				.songtitle {
+					margin: 0px !important;
+					padding: 0px !important;
+					font-variant: small-caps;
+					font-weight: bold;
+
+					&+ ul {
+						margin-top: 0px;
+					}
+
+					&+ ul:last-child {
+						margin-bottom: 1.5em;
+					}
+				}
+
+				/** Gallery Container */
+				#galleryContainer {
+					@include margins(20px, auto, auto, auto);
+
+					.portrait, .landscape {
+						width: $gallery-thumbnail-size;
+						@include margins(50px, 80px, auto, auto);
+					}
+
+					/** Images */
+					img {
+						@include margins(50px, auto, auto, auto);
+					}
+
+					.activeGalleryItem {
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+
+	/** Site Footer */
+	#site-footer {
+		@include margins(1em, auto, auto, auto);
+
+		p {
+			text-align: center;
+			font-family: $raleway;
+			color: #fff;
+			letter-spacing: 1px;
+
+			&:first-of-type {
+				margin-bottom: 0px !important;
+			}
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+
+			&:hover {
+				color: $yellowish;
+			}
+		}
+	}
+}

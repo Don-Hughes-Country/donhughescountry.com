@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:100|Nixie+One|Fredericka+the+Great|Cabin+Sketch|Syncopate|Istok+Web");
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -7301,4 +7302,226 @@ a.th {
 /* line 148, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/zurb-foundation-4.3.2/scss/foundation/components/_dropdown.scss */
 .f-dropdown.large {
   max-width: 800px;
+}
+
+/** Global Styles */
+/** Screen Only */
+@media only screen {
+  /** Body */
+  /* line 58, ../sass/_styles.scss */
+  body {
+    background: url("http://donhughescountry.com/_images/sidepic2.png") fixed no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+  /** Gallery Activated */
+  /* line 66, ../sass/_styles.scss */
+  .galleryActivated {
+    background: none;
+    background-color: black;
+  }
+  /* line 70, ../sass/_styles.scss */
+  .galleryActivated #container, .galleryActivated footer, .galleryActivated #music-player {
+    visibility: hidden;
+  }
+
+  /** Container */
+  /* line 76, ../sass/_styles.scss */
+  #container {
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+  }
+
+  /** Content Area */
+  /* line 81, ../sass/_styles.scss */
+  #content-area {
+    margin-top: 90px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    padding-top: auto;
+    padding-left: 20px;
+    padding-bottom: auto;
+    padding-right: 20px;
+    border: 2px solid white;
+    -webkit-box-shadow: 5px 5px 15px black;
+    -moz-box-shadow: 5px 5px 15px black;
+    box-shadow: 5px 5px 15px black;
+    background: #877869;
+    /** Section */
+  }
+  /* line 89, ../sass/_styles.scss */
+  #content-area section {
+    /** Article */
+  }
+  /* line 91, ../sass/_styles.scss */
+  #content-area section article {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.8);
+    /** Heading 1 */
+    /** Heading 2 */
+    /** Paragraphs and List Items */
+    /** Blockquote */
+    /** Links */
+    /** Video */
+    /** Purchase CD Links */
+    /** Contact Info */
+    /** Song Titles */
+    /** Gallery Container */
+  }
+  /* line 95, ../sass/_styles.scss */
+  #content-area section article:last-child {
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: auto;
+    border-bottom: none;
+  }
+  /* line 101, ../sass/_styles.scss */
+  #content-area section article h1 {
+    font-size: 2.5em;
+    font-weight: 200;
+    font-family: Raleway;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    margin-right: auto;
+  }
+  /* line 109, ../sass/_styles.scss */
+  #content-area section article h2 {
+    font-size: 1em;
+    font-family: Syncopate, cursive;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: auto;
+    margin-right: auto;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+  /* line 119, ../sass/_styles.scss */
+  #content-area section article p, #content-area section article ol li, #content-area section article ul li {
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: "Istok Web";
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+  /* line 127, ../sass/_styles.scss */
+  #content-area section article ol li, #content-area section article ul li {
+    margin-left: 1.5em;
+  }
+  /* line 132, ../sass/_styles.scss */
+  #content-area section article blockquote {
+    font-size: 1.5em;
+    font-family: "Nixie One";
+    letter-spacing: 1px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+  }
+  /* line 142, ../sass/_styles.scss */
+  #content-area section article a {
+    color: #8a3b17;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  /* line 147, ../sass/_styles.scss */
+  #content-area section article a:hover {
+    color: #aa0000;
+  }
+  /* line 153, ../sass/_styles.scss */
+  #content-area section article video {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: auto;
+    margin-right: auto;
+    background: #000;
+  }
+  /* line 159, ../sass/_styles.scss */
+  #content-area section article table tbody tr td div {
+    margin-top: 20px !important;
+  }
+  /* line 164, ../sass/_styles.scss */
+  #content-area section article .contactInfo {
+    text-align: center;
+  }
+  /* line 169, ../sass/_styles.scss */
+  #content-area section article .songtitle {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-variant: small-caps;
+    font-weight: bold;
+  }
+  /* line 175, ../sass/_styles.scss */
+  #content-area section article .songtitle + ul {
+    margin-top: 0px;
+  }
+  /* line 179, ../sass/_styles.scss */
+  #content-area section article .songtitle + ul:last-child {
+    margin-bottom: 1.5em;
+  }
+  /* line 185, ../sass/_styles.scss */
+  #content-area section article #galleryContainer {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    /** Images */
+  }
+  /* line 188, ../sass/_styles.scss */
+  #content-area section article #galleryContainer .portrait, #content-area section article #galleryContainer .landscape {
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-bottom: auto;
+    margin-right: auto;
+  }
+  /* line 194, ../sass/_styles.scss */
+  #content-area section article #galleryContainer img {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+  }
+  /* line 198, ../sass/_styles.scss */
+  #content-area section article #galleryContainer .activeGalleryItem {
+    visibility: visible;
+  }
+
+  /** Site Footer */
+  /* line 207, ../sass/_styles.scss */
+  #site-footer {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+  }
+  /* line 210, ../sass/_styles.scss */
+  #site-footer p {
+    text-align: center;
+    font-family: Raleway;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  /* line 216, ../sass/_styles.scss */
+  #site-footer p:first-of-type {
+    margin-bottom: 0px !important;
+  }
+  /* line 221, ../sass/_styles.scss */
+  #site-footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  /* line 225, ../sass/_styles.scss */
+  #site-footer a:hover {
+    color: #be914e;
+  }
 }
